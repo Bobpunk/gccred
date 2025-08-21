@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Empréstimo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+<div class="container">
+    
+     <div class="logo-container">
+        <img src="images/logo.png" alt="Logo GC">
+    </div>
+    <h2>Calculadora de Empréstimo</h2>
+    
+    <label for="valorDesejado">Quanto você quer receber (R$)?</label>
+    <input type="number" id="valorDesejado" placeholder="Ex: 1000">
+
+    <label for="parcelas">Em quantas vezes?</label>
+    <select id="parcelas">
+        </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
