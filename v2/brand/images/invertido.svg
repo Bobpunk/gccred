@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" width="100%" height="100%">
+  <!-- Fundo Lime Invertido -->
+  <rect width="180" height="40" rx="6" fill="#D4FF3F" />
+  
+  <!-- Monograma (G) — fundo escuro + traço lime -->
+  <rect x="0" y="0" width="40" height="40" rx="8" fill="#1A1033" />
+  <path d="M 16 15 A 7 7 0 1 0 18 20 L 12 20" stroke="#D4FF3F" stroke-width="3.5" fill="none" stroke-linejoin="miter" />
+  
+  <!-- Monograma (C) -->
+  <path d="M 34 15 A 7 7 0 1 0 34 25" stroke="#D4FF3F" stroke-width="3.5" fill="none" />
+  
+  <!-- Linha do Cifrão -->
+  <line x1="29" y1="10" x2="29" y2="30" stroke="#D4FF3F" stroke-width="0.8" opacity="0.35" />
+
+  <!-- Tipografia "CRED" — escuro no lime -->
+  <text x="50" y="26.5" font-family="'Sora', 'Montserrat', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#1A1033" letter-spacing="1">CRED</text>
+</svg>

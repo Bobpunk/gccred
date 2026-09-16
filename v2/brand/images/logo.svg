@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1344 1152" width="1344" height="1152">
+  <title>GC Logo</title>
+  <desc>Neon lime GC logo on a dark navy background</desc>
+
+  <!-- Background -->
+  <rect width="1344" height="1152" fill="#100d2b"/>
+
+  <!-- Main rounded card -->
+  <rect x="210" y="190" width="924" height="756" rx="82"
+        fill="none" stroke="#dfff2f" stroke-width="44"/>
+
+  <!-- Footer divider -->
+  <line x1="215" y1="778" x2="1129" y2="778"
+        stroke="#dfff2f" stroke-width="44"/>
+
+  <!-- GC badge -->
+  <rect x="407" y="316" width="527" height="376" rx="62"
+        fill="#dfff2f"/>
+
+  <!-- GC lettering -->
+  <text x="670.5" y="607"
+        text-anchor="middle"
+        font-family="DejaVu Sans, Arial, sans-serif"
+        font-size="208"
+        font-weight="900"
+        letter-spacing="-18"
+        fill="#100d2b">GC</text>
+</svg>

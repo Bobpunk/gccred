@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="100%" height="100%">
+  <!-- Fundo Violeta Profundo (com cantos arredondados) -->
+  <rect width="40" height="40" rx="10" fill="#1A1033" />
+  
+  <!-- Letra G: Traço contínuo geométrico -->
+  <path d="M 16 15 A 7 7 0 1 0 18 20 L 12 20" stroke="#D4FF3F" stroke-width="3.5" fill="none" stroke-linejoin="miter" />
+  
+  <!-- Letra C: Arco aberto na direita -->
+  <path d="M 34 15 A 7 7 0 1 0 34 25" stroke="#D4FF3F" stroke-width="3.5" fill="none" />
+  
+  <!-- Linha do Cifrão: Sutil, 0.8px, centralizada no eixo do C (x=29) -->
+  <line x1="29" y1="10" x2="29" y2="30" stroke="#D4FF3F" stroke-width="0.8" opacity="0.35" />
+</svg>
