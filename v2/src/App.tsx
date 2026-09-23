@@ -5,22 +5,11 @@ const KIT = {
   id: "noite-forte",
   nome: "GC Cred",
   tagline: "Chamou, passou, tá na conta!",
-  googleUrl:
-    "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap",
 } as const;
 
 export default function App() {
   useEffect(() => {
     document.documentElement.setAttribute("data-kit", KIT.id);
-    const id = "kit-font";
-    let link = document.getElementById(id) as HTMLLinkElement | null;
-    if (!link) {
-      link = document.createElement("link");
-      link.id = id;
-      link.rel = "stylesheet";
-      document.head.appendChild(link);
-    }
-    link.href = KIT.googleUrl;
     document.title = `${KIT.nome} — Empréstimo consignado`;
   }, []);
 

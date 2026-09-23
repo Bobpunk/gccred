@@ -1,0 +1,319 @@
+<svg viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg" width="1080" height="1350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&amp;display=swap');
+    </style>
+
+    <!-- Neon glow filtro forte -->
+    <filter id="neonStrong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4"  result="b2"/>
+      <feColorMatrix in="b1" type="matrix"
+        values="0 0 0 0 0.83  0 0 0 0 1  0 0 0 0 0.25  0 0 0 3 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Neon glow suave para ícones -->
+    <filter id="neonSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.83  0 0 0 0 1  0 0 0 0 0.25  0 0 0 2.5 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradiente de fundo radial -->
+    <radialGradient id="mesh1" cx="15%" cy="20%" r="55%">
+      <stop offset="0%"   stop-color="#2D1F5E" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1A1033" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mesh2" cx="85%" cy="80%" r="50%">
+      <stop offset="0%"   stop-color="#D4FF3F" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1A1033" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mesh3" cx="80%" cy="10%" r="40%">
+      <stop offset="0%"   stop-color="#D4FF3F" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#1A1033" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gradiente separador item -->
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#D4FF3F" stop-opacity="0.5"/>
+      <stop offset="60%"  stop-color="#D4FF3F" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#D4FF3F" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Gradiente número -->
+    <linearGradient id="numGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#EAFF7A"/>
+      <stop offset="100%" stop-color="#D4FF3F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════
+       FUNDO
+  ═══════════════════════════════════════════ -->
+  <rect width="1080" height="1350" fill="#0F0B20"/>
+  <rect width="1080" height="1350" fill="url(#mesh1)"/>
+  <rect width="1080" height="1350" fill="url(#mesh2)"/>
+  <rect width="1080" height="1350" fill="url(#mesh3)"/>
+
+  <!-- Bordas decorativas sutis -->
+  <rect x="0"    y="0" width="5"  height="1350" fill="#D4FF3F" opacity="0.6"/>
+  <rect x="1075" y="0" width="5"  height="1350" fill="#D4FF3F" opacity="0.15"/>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER — Logo + Slogan
+  ═══════════════════════════════════════════ -->
+  <rect x="0" y="0" width="1080" height="155" fill="#140A2A" opacity="0.8"/>
+
+  <!-- GC -->
+  <text x="52" y="105"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="82" fill="#D4FF3F"
+    filter="url(#neonSoft)" letter-spacing="-3">GC</text>
+  <!-- CRED -->
+  <text x="210" y="105"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="82" fill="#F5F3FF"
+    letter-spacing="-3">CRED</text>
+
+  <!-- Slogan -->
+  <text x="52" y="138"
+    font-family="'Sora',Arial,sans-serif"
+    font-weight="600" font-size="26" fill="#9A90C0"
+    letter-spacing="0.5">Chamou, passou, tá na conta!</text>
+
+  <!-- WhatsApp no header (canto direito) -->
+  <!-- Ícone WA simplificado -->
+  <circle cx="960" cy="77" r="38" fill="#25D366" opacity="0.15"/>
+  <circle cx="960" cy="77" r="30" fill="none" stroke="#25D366" stroke-width="3"/>
+  <path d="M 948 65 Q 960 55 972 65 L 975 85 Q 967 90 958 87 Q 948 95 943 88 L 940 75 Z"
+        fill="#25D366" opacity="0.8"/>
+  <text x="960" y="134"
+    font-family="'Sora',Arial,sans-serif"
+    font-weight="700" font-size="22" fill="#25D366"
+    text-anchor="middle">wa.me/5583981810388</text>
+
+  <!-- Linha divisória header -->
+  <line x1="5" y1="155" x2="1075" y2="155" stroke="url(#divider)" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — Título
+  ═══════════════════════════════════════════ -->
+
+  <!-- Big "5" -->
+  <text x="68" y="395"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="280" fill="url(#numGrad)"
+    opacity="0.18" letter-spacing="-10">5</text>
+
+  <!-- Número 5 visível -->
+  <text x="62" y="370"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="240" fill="#D4FF3F"
+    filter="url(#neonStrong)" letter-spacing="-10" opacity="0.9">5</text>
+
+  <!-- MOTIVOS -->
+  <text x="290" y="250"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="96" fill="#F5F3FF"
+    letter-spacing="-2">MOTIVOS</text>
+
+  <text x="290" y="335"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="68" fill="#F5F3FF"
+    letter-spacing="-1">PARA PEGAR</text>
+
+  <text x="290" y="408"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="68" fill="#F5F3FF"
+    letter-spacing="-1">EMPRÉSTIMO</text>
+
+  <!-- Destaque "NO CARTÃO DE CRÉDITO" -->
+  <rect x="285" y="425" width="768" height="82" rx="8" fill="#D4FF3F" opacity="0.12"/>
+  <rect x="285" y="425" width="4"   height="82" rx="2" fill="#D4FF3F"/>
+  <text x="305" y="482"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="60" fill="#D4FF3F"
+    letter-spacing="-1" filter="url(#neonSoft)">NO CARTÃO DE CRÉDITO</text>
+
+  <!-- Divisor hero/itens -->
+  <line x1="5" y1="528" x2="1075" y2="528" stroke="url(#divider)" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════
+       ITEM 1 — RAPIDEZ  (y=545)
+  ═══════════════════════════════════════════ -->
+  <g transform="translate(0, 545)">
+    <!-- Número -->
+    <text x="52" y="106"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="900" font-size="100" fill="#D4FF3F"
+      filter="url(#neonSoft)" opacity="0.35">01</text>
+
+    <!-- Ícone raio (RAPIDEZ) -->
+    <g transform="translate(195, 18)" filter="url(#neonSoft)">
+      <polygon points="30,0 10,50 25,50 15,90 50,35 32,35 50,0"
+               fill="#D4FF3F"/>
+    </g>
+
+    <!-- Título -->
+    <text x="270" y="60"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="800" font-size="52" fill="#F5F3FF"
+      letter-spacing="2">RAPIDEZ</text>
+
+    <!-- Descrição -->
+    <text x="270" y="96"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Aprovação rápida e transferência</text>
+    <text x="270" y="128"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">via Pix em pouco tempo.</text>
+
+    <!-- Divisor -->
+    <line x1="5" y1="155" x2="1075" y2="155" stroke="#2D1F5E" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       ITEM 2 — FLEXIBILIDADE  (y=700)
+  ═══════════════════════════════════════════ -->
+  <g transform="translate(0, 700)">
+    <text x="52" y="106"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="900" font-size="100" fill="#D4FF3F"
+      filter="url(#neonSoft)" opacity="0.35">02</text>
+
+    <!-- Ícone cartão -->
+    <g transform="translate(195, 22)" filter="url(#neonSoft)">
+      <rect x="0" y="0" width="70" height="48" rx="6" fill="none" stroke="#D4FF3F" stroke-width="4"/>
+      <rect x="0" y="14" width="70" height="10" fill="#D4FF3F" opacity="0.4"/>
+      <rect x="8" y="30" width="18" height="12" rx="2" fill="none" stroke="#D4FF3F" stroke-width="3"/>
+    </g>
+
+    <text x="290" y="60"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="800" font-size="52" fill="#F5F3FF"
+      letter-spacing="1">FLEXIBILIDADE</text>
+
+    <text x="290" y="96"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Use o dinheiro emprestado para</text>
+    <text x="290" y="128"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">quaisquer fins.</text>
+
+    <line x1="5" y1="155" x2="1075" y2="155" stroke="#2D1F5E" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       ITEM 3 — JUROS  (y=855)
+  ═══════════════════════════════════════════ -->
+  <g transform="translate(0, 855)">
+    <text x="52" y="106"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="900" font-size="100" fill="#D4FF3F"
+      filter="url(#neonSoft)" opacity="0.35">03</text>
+
+    <!-- Ícone seta para baixo + % -->
+    <g transform="translate(195, 10)" filter="url(#neonSoft)">
+      <text x="0" y="60" font-family="Arial,sans-serif" font-weight="900"
+            font-size="60" fill="#D4FF3F">%</text>
+      <polygon points="58,15 68,15 63,35" fill="#D4FF3F"/>
+    </g>
+
+    <text x="290" y="60"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="800" font-size="52" fill="#F5F3FF"
+      letter-spacing="2">JUROS</text>
+
+    <text x="290" y="96"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Taxas mais baixas que as praticadas</text>
+    <text x="290" y="128"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">pelos bancos tradicionais.</text>
+
+    <line x1="5" y1="155" x2="1075" y2="155" stroke="#2D1F5E" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       ITEM 4 — ACESSIBILIDADE  (y=1010)
+  ═══════════════════════════════════════════ -->
+  <g transform="translate(0, 1010)">
+    <text x="52" y="106"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="900" font-size="100" fill="#D4FF3F"
+      filter="url(#neonSoft)" opacity="0.35">04</text>
+
+    <!-- Ícone check shield -->
+    <g transform="translate(195, 8)" filter="url(#neonSoft)">
+      <path d="M35 0 L70 15 L70 50 Q70 75 35 85 Q0 75 0 50 L0 15 Z"
+            fill="none" stroke="#D4FF3F" stroke-width="4" stroke-linejoin="round"/>
+      <polyline points="18,45 30,57 52,33"
+                fill="none" stroke="#D4FF3F" stroke-width="5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <text x="290" y="60"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="800" font-size="52" fill="#F5F3FF"
+      letter-spacing="1">ACESSIBILIDADE</text>
+
+    <text x="290" y="96"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Sem consulta ao SPC/Serasa.</text>
+    <text x="290" y="128"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Crédito disponível para todos.</text>
+
+    <line x1="5" y1="155" x2="1075" y2="155" stroke="#2D1F5E" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       ITEM 5 — CONFORTO  (y=1165)
+  ═══════════════════════════════════════════ -->
+  <g transform="translate(0, 1165)">
+    <text x="52" y="106"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="900" font-size="100" fill="#D4FF3F"
+      filter="url(#neonSoft)" opacity="0.35">05</text>
+
+    <!-- Ícone casa -->
+    <g transform="translate(195, 8)" filter="url(#neonSoft)">
+      <polygon points="35,0 70,35 60,35 60,80 40,80 40,55 30,55 30,80 10,80 10,35 0,35"
+               fill="none" stroke="#D4FF3F" stroke-width="4"
+               stroke-linejoin="round"/>
+    </g>
+
+    <text x="290" y="60"
+      font-family="'Sora','Arial Black',sans-serif"
+      font-weight="800" font-size="52" fill="#F5F3FF"
+      letter-spacing="2">CONFORTO</text>
+
+    <text x="290" y="96"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">Solicitado e recebido sem sair</text>
+    <text x="290" y="128"
+      font-family="'Sora',Arial,sans-serif"
+      font-size="28" fill="#9A90C0">de casa, pelo WhatsApp.</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER — CTA
+  ═══════════════════════════════════════════ -->
+  <rect x="0" y="1295" width="1080" height="55" fill="#D4FF3F"/>
+
+  <!-- Texto CTA -->
+  <text x="540" y="1333"
+    font-family="'Sora','Arial Black',sans-serif"
+    font-weight="900" font-size="30" fill="#1A1033"
+    text-anchor="middle" letter-spacing="3">📲  (83) 98181-0388  ·  CHAME NO WHATSAPP</text>
+
+</svg>

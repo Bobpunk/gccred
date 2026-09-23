@@ -21,7 +21,6 @@ export default function Simulator() {
   const valorId = useId();
   const helpId = useId();
   const errorId = useId();
-  const liveErrorId = useId();
 
   const [valorTexto, setValorTexto] = useState("1000");
   const [parcelas, setParcelas] = useState(12);
@@ -119,7 +118,7 @@ export default function Simulator() {
               onBlur={() => setTouchedValor(true)}
               onFocus={(e) => e.currentTarget.select()}
               aria-invalid={!!valorError}
-              aria-describedby={valorError ? `${errorId} ${liveErrorId}` : helpId}
+              aria-describedby={valorError ? errorId : helpId}
               className="w-full min-w-0 bg-transparent py-2.5 pe-4 text-[16px] font-semibold tracking-[-0.02em] outline-none placeholder:font-medium placeholder:opacity-60"
               style={{ color: "var(--text)" }}
             />
@@ -139,10 +138,6 @@ export default function Simulator() {
               </p>
             ) : null}
           </div>
-          {/* polite live region for error announcements (screen reader) */}
-          <p id={liveErrorId} aria-live="polite" aria-atomic="true" className="sr-only">
-            {valorError ?? ""}
-          </p>
         </fieldset>
 
         <fieldset className="grid gap-1.5 min-w-0 p-0 m-0 border-0">
@@ -208,9 +203,6 @@ export default function Simulator() {
                     {sim.numParcelas}× de {formatarDinheiro(sim.valorParcela)}
                   </p>
                   <p className="inline-flex items-center gap-1 text-[12px] font-bold break-words" style={{ color: "var(--accent)" }}>
-                    <svg width="0" height="12"  fill="currentColor" aria-hidden className="shrink-0">
-                      
-                    </svg>
                     Pix na hora!
                   </p>
                 </div>
