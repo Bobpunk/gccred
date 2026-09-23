@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <!-- Rounded square background -->
+  <rect width="200" height="200" rx="44" fill="#1A1033"/>
+
+  <!-- Card in slight perspective via rotate -->
+  <g transform="translate(100, 100) rotate(-7)">
+    <rect x="-76" y="-50" width="152" height="96" rx="11" fill="#100828" stroke="#D4FF3F" stroke-width="3.5"/>
+    <!-- Magnetic stripe -->
+    <rect x="-76" y="-36" width="152" height="14" fill="#D4FF3F" opacity="0.07"/>
+    <!-- Chip -->
+    <rect x="-60" y="-8" width="26" height="20" rx="4" fill="none" stroke="#D4FF3F" stroke-width="2.5"/>
+    <line x1="-60" y1="2" x2="-34" y2="2" stroke="#D4FF3F" stroke-width="1.2" opacity="0.55"/>
+    <line x1="-47" y1="-8" x2="-47" y2="12" stroke="#D4FF3F" stroke-width="1.2" opacity="0.55"/>
+    <!-- GC Letters -->
+    <text x="-16" y="18" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif"
+          font-weight="900" font-size="46" fill="#D4FF3F" letter-spacing="-3">GC</text>
+  </g>
+</svg>

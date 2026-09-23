@@ -1,0 +1,29 @@
+<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" width="480" height="160">
+  <!-- Background -->
+  <rect width="480" height="160" rx="20" fill="#1A1033"/>
+
+  <!-- "GC" large bold -->
+  <text x="40" y="108"
+        font-family="'Arial Black','Impact','Helvetica Neue',sans-serif"
+        font-weight="900" font-size="90" fill="#D4FF3F" letter-spacing="-4">GC</text>
+
+  <!-- Card chip icon inlined on the G crossbar area (decorative) -->
+  <rect x="44" y="112" width="22" height="14" rx="3" fill="none" stroke="#1A1033" stroke-width="2" opacity="0.4"/>
+
+  <!-- Divider line -->
+  <line x1="178" y1="28" x2="178" y2="132" stroke="#D4FF3F" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- CRED stacked vertical -->
+  <text x="198" y="78"
+        font-family="'Arial Black','Helvetica Neue',sans-serif"
+        font-weight="900" font-size="46" fill="#F5F3FF" letter-spacing="1">CRED</text>
+
+  <!-- Slogan -->
+  <text x="200" y="106"
+        font-family="'Helvetica Neue',Arial,sans-serif"
+        font-weight="400" font-size="14.5" fill="#D4FF3F" letter-spacing="0.5">Chamou, passou, tá na conta!</text>
+
+  <!-- Small card icon as brand mark bottom right -->
+  <rect x="436" y="130" width="36" height="22" rx="4" fill="none" stroke="#D4FF3F" stroke-width="1.5" opacity="0.35"/>
+  <rect x="440" y="135" width="8" height="6" rx="1" fill="none" stroke="#D4FF3F" stroke-width="1" opacity="0.35"/>
+</svg>

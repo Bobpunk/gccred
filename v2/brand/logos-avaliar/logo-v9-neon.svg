@@ -1,0 +1,48 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" width="320" height="200">
+  <defs>
+    <!-- Neon glow filter -->
+    <filter id="neon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.83
+                0 0 0 0 1
+                0 0 0 0 0.25
+                0 0 0 1 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="320" height="200" fill="#0D0820"/>
+
+  <!-- Dark card body -->
+  <rect x="32" y="26" width="256" height="148" rx="14" fill="#140C2E"/>
+  <!-- Neon border -->
+  <rect x="32" y="26" width="256" height="148" rx="14" fill="none"
+        stroke="#D4FF3F" stroke-width="2.5" filter="url(#neon)"/>
+
+  <!-- Chip with neon glow -->
+  <rect x="52" y="62" width="36" height="28" rx="5" fill="none"
+        stroke="#D4FF3F" stroke-width="2.5" filter="url(#neon)"/>
+  <line x1="52" y1="76" x2="88" y2="76" stroke="#D4FF3F" stroke-width="1.2" opacity="0.6"/>
+  <line x1="70" y1="62" x2="70" y2="90" stroke="#D4FF3F" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- NFC waves neon -->
+  <path d="M 107 68 Q 115 76 107 84" fill="none" stroke="#D4FF3F" stroke-width="2.2" stroke-linecap="round" filter="url(#neon)" opacity="0.8"/>
+  <path d="M 116 60 Q 130 76 116 92" fill="none" stroke="#D4FF3F" stroke-width="2" stroke-linecap="round" filter="url(#neon)" opacity="0.5"/>
+
+  <!-- GC large neon text -->
+  <text x="200" y="134" text-anchor="middle"
+        font-family="'Arial Black','Impact',sans-serif"
+        font-weight="900" font-size="72" fill="#D4FF3F"
+        filter="url(#neon)" letter-spacing="-4">GC</text>
+
+  <!-- GC CRED small -->
+  <text x="290" y="158" text-anchor="end"
+        font-family="'Arial Black',sans-serif"
+        font-weight="700" font-size="10" fill="#D4FF3F" letter-spacing="2.5" opacity="0.7">GC CRED</text>
+</svg>

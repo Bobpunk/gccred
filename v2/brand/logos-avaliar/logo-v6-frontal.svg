@@ -1,0 +1,27 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <!-- Background -->
+  <rect width="300" height="200" rx="20" fill="#1A1033"/>
+
+  <!-- Card frontal (retângulo perfeito) -->
+  <rect x="28" y="30" width="244" height="140" rx="14" fill="#100828" stroke="#D4FF3F" stroke-width="3"/>
+
+  <!-- Chip EMV -->
+  <rect x="46" y="60" width="36" height="28" rx="5" fill="none" stroke="#D4FF3F" stroke-width="2.5"/>
+  <line x1="46" y1="74" x2="82" y2="74" stroke="#D4FF3F" stroke-width="1.2" opacity="0.5"/>
+  <line x1="64" y1="60" x2="64" y2="88" stroke="#D4FF3F" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Contactless NFC waves -->
+  <path d="M 100 68 Q 107 74 100 80" fill="none" stroke="#D4FF3F" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 107 62 Q 119 74 107 86" fill="none" stroke="#D4FF3F" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 114 56 Q 131 74 114 92" fill="none" stroke="#D4FF3F" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- GC Large letters -->
+  <text x="150" y="120" text-anchor="middle"
+        font-family="'Arial Black','Impact',sans-serif"
+        font-weight="900" font-size="58" fill="#D4FF3F" letter-spacing="-3">GC</text>
+
+  <!-- GC CRED bottom right (bandeira) -->
+  <text x="264" y="152" text-anchor="end"
+        font-family="'Arial Black',sans-serif"
+        font-weight="900" font-size="11" fill="#D4FF3F" letter-spacing="2" opacity="0.8">GC CRED</text>
+</svg>

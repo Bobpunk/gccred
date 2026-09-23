@@ -1,0 +1,20 @@
+<svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" width="220" height="220">
+  <!-- Background -->
+  <rect width="220" height="220" rx="44" fill="#1A1033"/>
+
+  <!-- G: arc + horizontal bar — strokes only -->
+  <!-- G outer arc: full circle cutoff at 3 o'clock -->
+  <path d="M 70 58 A 42 42 0 1 0 70 162" fill="none" stroke="#D4FF3F" stroke-width="9" stroke-linecap="round"/>
+  <!-- G inner horizontal bar -->
+  <line x1="70" y1="116" x2="42" y2="116" stroke="#D4FF3F" stroke-width="9" stroke-linecap="round"/>
+  <!-- G inner horizontal segment right -->
+  <line x1="70" y1="116" x2="90" y2="116" stroke="#D4FF3F" stroke-width="9" stroke-linecap="round"/>
+  <!-- G vertical drop -->
+  <line x1="90" y1="116" x2="90" y2="138" stroke="#D4FF3F" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- C: arc only -->
+  <path d="M 192 78 A 42 42 0 1 0 192 142" fill="none" stroke="#D4FF3F" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Cifrão: tiny vertical line through C center -->
+  <line x1="162" y1="90" x2="162" y2="132" stroke="#D4FF3F" stroke-width="3.5" stroke-linecap="round" opacity="0.45"/>
+</svg>

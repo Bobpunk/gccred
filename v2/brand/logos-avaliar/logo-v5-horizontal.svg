@@ -1,0 +1,25 @@
+<svg viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg" width="520" height="160">
+  <!-- Background -->
+  <rect width="520" height="160" rx="20" fill="#1A1033"/>
+
+  <!-- Card icon (left) -->
+  <g transform="translate(90, 80) rotate(-6)">
+    <rect x="-68" y="-44" width="136" height="86" rx="10" fill="#100828" stroke="#D4FF3F" stroke-width="3"/>
+    <rect x="-68" y="-30" width="136" height="12" fill="#D4FF3F" opacity="0.07"/>
+    <rect x="-52" y="-6" width="22" height="17" rx="3" fill="none" stroke="#D4FF3F" stroke-width="2.2"/>
+    <line x1="-52" y1="2.5" x2="-30" y2="2.5" stroke="#D4FF3F" stroke-width="1" opacity="0.5"/>
+    <line x1="-41" y1="-6" x2="-41" y2="11" stroke="#D4FF3F" stroke-width="1" opacity="0.5"/>
+    <text x="-12" y="16" font-family="'Arial Black','Impact',sans-serif" font-weight="900" font-size="40" fill="#D4FF3F" letter-spacing="-2">GC</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="188" y1="28" x2="188" y2="132" stroke="#D4FF3F" stroke-width="1" opacity="0.2"/>
+
+  <!-- GC CRED wordmark -->
+  <text x="208" y="100" font-family="'Arial Black','Helvetica Neue',sans-serif"
+        font-weight="900" font-size="54" fill="#F5F3FF" letter-spacing="-1">GC CRED</text>
+
+  <!-- Slogan -->
+  <text x="210" y="128" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-weight="400" font-size="16" fill="#D4FF3F" letter-spacing="0.5">Chamou, passou, tá na conta!</text>
+</svg>

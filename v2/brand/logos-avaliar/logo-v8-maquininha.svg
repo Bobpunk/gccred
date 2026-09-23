@@ -1,0 +1,35 @@
+<svg viewBox="0 0 180 240" xmlns="http://www.w3.org/2000/svg" width="180" height="240">
+  <!-- Background -->
+  <rect width="180" height="240" rx="20" fill="#1A1033"/>
+
+  <!-- POS Machine body -->
+  <rect x="30" y="20" width="120" height="190" rx="16" fill="#100828" stroke="#D4FF3F" stroke-width="3"/>
+
+  <!-- Machine screen -->
+  <rect x="44" y="36" width="92" height="70" rx="8" fill="#0A0620" stroke="#D4FF3F" stroke-width="2"/>
+
+  <!-- GC on screen -->
+  <text x="90" y="92" text-anchor="middle"
+        font-family="'Arial Black','Impact',sans-serif"
+        font-weight="900" font-size="44" fill="#D4FF3F" letter-spacing="-2">GC</text>
+
+  <!-- Card slot -->
+  <rect x="55" y="116" width="70" height="8" rx="4" fill="#D4FF3F" opacity="0.3"/>
+  <text x="90" y="123" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="7" fill="#D4FF3F" opacity="0.5" letter-spacing="1">PASSE O CARTÃO</text>
+
+  <!-- Keypad dots (3x3 grid) -->
+  <circle cx="63" cy="147" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="90" cy="147" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="117" cy="147" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="63" cy="166" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="90" cy="166" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="117" cy="166" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="63" cy="185" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="90" cy="185" r="5" fill="#D4FF3F" opacity="0.4"/>
+  <circle cx="117" cy="185" r="5" fill="#D4FF3F" opacity="0.4"/>
+
+  <!-- OK button (green) -->
+  <rect x="100" y="199" width="34" height="16" rx="8" fill="#D4FF3F" opacity="0.7"/>
+  <text x="117" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="8" fill="#1A1033">OK</text>
+</svg>

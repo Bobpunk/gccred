@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GC Cred — Galeria de Logos</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Sora', system-ui, sans-serif;
+      background: #0D0820;
+      color: #F5F3FF;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #D4FF3F;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #9a90c0;
+      font-size: 0.95rem;
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #140C2E;
+      border: 1.5px solid #2a1f4a;
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: #D4FF3F;
+      transform: translateY(-4px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      align-self: flex-start;
+    }
+    .badge {
+      background: #D4FF3F;
+      color: #1A1033;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #c4b8f0;
+    }
+
+    .logo-wrap {
+      background: #1A1033;
+      border-radius: 14px;
+      padding: 24px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 140px;
+    }
+    .logo-wrap img, .logo-wrap object {
+      max-width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+    }
+
+    .card-desc {
+      font-size: 0.8rem;
+      color: #7a70a0;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .full-width { grid-column: 1 / -1; }
+
+    .section-title {
+      grid-column: 1 / -1;
+      color: #D4FF3F;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #2a1f4a;
+      margin-top: 16px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #4a3f70;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>GC Cred — Galeria de Logos</h1>
+<p class="subtitle">10 variações para avaliação · Paleta Noite Forte · Verde Volt #D4FF3F · Violeta #1A1033</p>
+
+<div class="grid">
+
+  <!-- GERADOS POR IA -->
+  <div class="section-title">Geradas por IA (JPG)</div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V1</span>
+      <span class="card-title">Semi-realista 3D</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="../../../../.gemini/antigravity/brain/541ec846-4286-4d21-95c7-fb5c3ac2c092/gc_cred_logo_final_1790173824066.jpg" alt="Logo V1 semi-realista"/>
+    </div>
+    <p class="card-desc">Cartão 3D brilhante em perspectiva, chip EMV dourado, GC embossed. Estilo premium foto-realista.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V2</span>
+      <span class="card-title">Minimalista Outline</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="../../../../.gemini/antigravity/brain/541ec846-4286-4d21-95c7-fb5c3ac2c092/gc_cred_logo_minimal_1790174130917.jpg" alt="Logo V2 minimalista"/>
+    </div>
+    <p class="card-desc">Cartão outline em perspectiva 3/4, traço fino, estilo Nubank. Limpo e moderno.</p>
+  </div>
+
+  <!-- SVGs -->
+  <div class="section-title">Vetores SVG (criados manualmente)</div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V3</span>
+      <span class="card-title">App Icon (Quadrado)</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v3-app-icon.svg" alt="Logo V3 app icon"/>
+    </div>
+    <p class="card-desc">Ícone quadrado com cartão em perspectiva leve. Ideal para WhatsApp e favicon.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V4</span>
+      <span class="card-title">Badge / Carimbo</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v4-badge.svg" alt="Logo V4 badge"/>
+    </div>
+    <p class="card-desc">Badge verde volt com GC em violeta escuro. Impacto visual forte, ótimo para selos e posts.</p>
+  </div>
+
+  <div class="card full-width">
+    <div class="card-header">
+      <span class="badge">V5</span>
+      <span class="card-title">Logo Horizontal Completo</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v5-horizontal.svg" alt="Logo V5 horizontal"/>
+    </div>
+    <p class="card-desc">Cartão ícone + GC CRED wordmark + slogan. Perfeito para header do site e cartão de visita.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V6</span>
+      <span class="card-title">Cartão Frontal</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v6-frontal.svg" alt="Logo V6 frontal"/>
+    </div>
+    <p class="card-desc">Cartão visto de frente com chip EMV, ondas NFC e GC centralizado. Direto ao ponto.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V7</span>
+      <span class="card-title">Monograma GC Puro</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v7-monogram.svg" alt="Logo V7 monograma"/>
+    </div>
+    <p class="card-desc">Só as letras G e C em stroke geométrico. Cifrão sutil no C. Elegante e atemporal.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V8</span>
+      <span class="card-title">Maquininha POS</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v8-maquininha.svg" alt="Logo V8 maquininha"/>
+    </div>
+    <p class="card-desc">Ícone de maquininha com GC na tela e teclado. Remete diretamente ao negócio de cartões.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="badge">V9</span>
+      <span class="card-title">Cartão Neon Dark</span>
+    </div>
+    <div class="logo-wrap" style="background:#0D0820">
+      <img src="logo-v9-neon.svg" alt="Logo V9 neon"/>
+    </div>
+    <p class="card-desc">Cartão escuro com bordas e detalhes em neon verde volt brilhante. Impacto visual premium.</p>
+  </div>
+
+  <div class="card full-width">
+    <div class="card-header">
+      <span class="badge">V10</span>
+      <span class="card-title">Wordmark Tipográfico</span>
+    </div>
+    <div class="logo-wrap">
+      <img src="logo-v10-wordmark.svg" alt="Logo V10 wordmark"/>
+    </div>
+    <p class="card-desc">GC grande em verde volt + CRED em branco + slogan. Forte identidade tipográfica. Ótimo para banners e redes sociais.</p>
+  </div>
+
+</div>
+
+<footer>GC Cred · Paleta Noite Forte · Gerado por Antigravity AI</footer>
+
+</body>
+</html>
