@@ -206,9 +206,7 @@ export default function Simulator() {
                     Pix na hora!
                   </p>
                 </div>
-                <p className="mt-1 text-[13px] leading-5 break-words [overflow-wrap:anywhere]" style={{ color: "var(--muted)" }}>
-                  Total {formatarDinheiro(sim.valorBrutoFinal)}
-                </p>
+                
               </div>
 
               <div
